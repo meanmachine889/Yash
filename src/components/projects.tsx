@@ -9,12 +9,12 @@ const projects = [
     name: "Memora",
     description: "Web3 NFT membership platform for owning, trading, and transferring subscriptions",
     image: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1748156963/Screenshot_2025-05-25_123808_ytuiok.png",
-    url: "#",
+    url: "https://memora-kohl.vercel.app",
     github: "#",
   },
   {
     name: "Manipal Hackathon 2024",
-    description: "Official website for Manipal Hackathon'24 with 2200+ users and 400+ teams from 100 colleges all over India",
+    description: "Official website for Manipal Hackathon'24 supporting 2200+ users and 400+ teams from 100 colleges all over India",
     image: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1748171732/Screenshot_2024-10-03_021536_sijlq0.png",
     url: "#",
     github: "#",
@@ -23,14 +23,14 @@ const projects = [
     name: "Clarity",
     description: "AI-powered platform for PDF interaction with document insights and chat functionality",
     image: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1748171528/Screenshot_2025-05-25_164147_pgb2cs.png",
-    url: "#",
+    url: "https://clarity-beige.vercel.app",
     github: "#",
   },
   {
     name: "Campaign Funding DAPP",
     description: "Decentralized platform for campaign funding with secure and transparent fund management",
     image: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1748172909/Screenshot_2025-05-25_170440_dy8ec7.png",
-    url: "#",
+    url: "https://campaign-gold.vercel.app",
     github: "#",
   },
   {
@@ -60,7 +60,9 @@ export default function Projects() {
                 <p className="md:text-md text-sm text-zinc-400 mb-3">{project.description}</p>
                 <div className="flex md:gap-2 gap-1">
                   <Button className="bg-[#101010] border-2 text-gray-300 font-light text-sm border-[#202020]"><GithubIcon /></Button>
-                  <Button className="bg-[#101010] border-2 text-gray-300 font-light text-sm border-[#202020]">Visit</Button>
+                  {project.url !== "#" && (
+                    <Button className="bg-[#101010] border-2 text-gray-300 font-light text-sm border-[#202020]">Visit</Button>
+                  )}
                 </div>
               </div>
             </div>

@@ -1,3 +1,4 @@
+import Achievements from "@/components/achievements";
 import Experience from "@/components/experience";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar"
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <Experience />
         <Projects />
+        <Achievements />
       </div>
     </div>
   );

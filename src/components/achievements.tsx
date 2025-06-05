@@ -3,7 +3,7 @@ import { Trophy, Award, Medal } from "lucide-react"
 const achievements = [
     {
         position: "1st Place",
-        hackathon: "FIT INDIA - 6th Edition-2024 IDEA GENERATION CONTEST",
+        hackathon: "FIT INDIA - 6th Edition-2024",
         rank: 1,
     },
     {
@@ -57,7 +57,7 @@ export default function Achievements() {
                     <h2 className="text-xl sm:text-2xl lg:text-3xl font-normal text-white">Achievements</h2>
                 </div>
 
-                <div className="space-y-3 sm:space-y-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {achievements.map((achievement, index) => (
                         <div
                             key={`${achievement.hackathon}-${index}`}
@@ -65,7 +65,7 @@ export default function Achievements() {
                         >
                             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
                                 <div className="flex items-start md:flex-row flex-col sm:items-center gap-3 sm:gap-4 min-w-0 flex-1">
-                                    <div
+                                    {/* <div
                                         className={`w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 flex-shrink-0 rounded-full flex items-center justify-center border ${getTrophyBg(achievement.rank)}`}
                                     >
                                         {achievement.position.includes("Top") ? (
@@ -77,12 +77,12 @@ export default function Achievements() {
                                                 {getTrophyIcon(achievement.rank)}
                                             </div>
                                         )}
-                                    </div>
+                                    </div> */}
 
 
                                     <div className="min-w-0 flex-1">
                                         <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3 mb-1">
-                                            <h3 className="text-base sm:text-lg lg:text-xl font-medium text-white group-hover:text-zinc-100 transition-colors">
+                                            <h3 className="text-base sm:text-lg text-white group-hover:text-zinc-100 transition-colors">
                                                 {achievement.position}
                                             </h3>
                                         </div>

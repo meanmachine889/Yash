@@ -1,7 +1,6 @@
 "use client"
 
 import { GithubIcon } from "lucide-react"
-import Image from "next/image"
 import { Button } from "./ui/button"
 
 const projects = [
@@ -34,6 +33,13 @@ const projects = [
     github: "#",
   },
   {
+    name: "ConnectZ",
+    description: "Realtime chatting platform with google authentication",
+    image: "",
+    url: "https://connect-z.vercel.app",
+    github: "#"
+  },
+  {
     name: "LeetCoach",
     description: "AI-powered coding platform like LeetCode",
     image: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1748172630/cas_pbanvx.png",
@@ -52,21 +58,21 @@ export default function Projects() {
         {projects.map((project) => (
           <div
             key={project.name}
-            className="bg-zinc-900 border rounded-lg hover:bg-zinc-800 transition p-4 px-2"
+            className="bg-zinc-900 border border-zinc-800 rounded-lg hover:bg-zinc-800 transition p-4 px-2"
           >
             <div className="flex items-center gap-4 mb-3 px-2">
               <div className="flex-1">
                 <h3 className="md:text-xl mb-3">{project.name}</h3>
                 <p className="md:text-md text-sm text-zinc-400 mb-3">{project.description}</p>
                 <div className="flex md:gap-2 gap-1">
-                  <Button className="bg-[#101010] border-2 text-gray-300 font-light text-sm border-[#202020]"><GithubIcon /></Button>
+                  <Button className="bg-[#101010] border text-gray-300 font-light text-sm border-[#202020]"><GithubIcon /></Button>
                   {project.url !== "#" && (
-                    <Button className="bg-[#101010] border-2 text-gray-300 font-light text-sm border-[#202020]">Visit</Button>
+                    <Button className="bg-[#101010] border text-gray-300 font-light text-sm border-[#202020]">Visit</Button>
                   )}
                 </div>
               </div>
             </div>
-            <div className="rounded-lg overflow-hidden">
+            {/* <div className="rounded-lg overflow-hidden">
               <Image
                 src={project.image}
                 alt={`${project.name} screenshot`}
@@ -74,7 +80,7 @@ export default function Projects() {
                 height={400}
                 className="w-full md:h-64 object-cover"
               />
-            </div>
+            </div> */}
           </div>
         ))}
       </div>

@@ -1,4 +1,4 @@
-import { Trophy, Award, Medal } from "lucide-react"
+// import { Trophy, Award, Medal } from "lucide-react"
 
 const achievements = [
     {
@@ -23,31 +23,31 @@ const achievements = [
     }
 ]
 
-const getTrophyIcon = (rank: number) => {
-    switch (rank) {
-        case 1:
-            return <Trophy className="w-full h-full text-yellow-500" />
-        case 2:
-            return <Award className="w-full h-full text-gray-400" />
-        case 3:
-            return <Medal className="w-full h-full text-amber-600" />
-        default:
-            return <Trophy className="w-full h-full text-yellow-500" />
-    }
-}
+// const getTrophyIcon = (rank: number) => {
+//     switch (rank) {
+//         case 1:
+//             return <Trophy className="w-full h-full text-yellow-500" />
+//         case 2:
+//             return <Award className="w-full h-full text-gray-400" />
+//         case 3:
+//             return <Medal className="w-full h-full text-amber-600" />
+//         default:
+//             return <Trophy className="w-full h-full text-yellow-500" />
+//     }
+// }
 
-const getTrophyBg = (rank: number) => {
-    switch (rank) {
-        case 1:
-            return "bg-yellow-500/10 border-yellow-500/20"
-        case 2:
-            return "bg-gray-400/10 border-gray-400/20"
-        case 3:
-            return "bg-amber-600/10 border-amber-600/20"
-        default:
-            return "bg-yellow-500/10 border-yellow-500/20"
-    }
-}
+// const getTrophyBg = (rank: number) => {
+//     switch (rank) {
+//         case 1:
+//             return "bg-yellow-500/10 border-yellow-500/20"
+//         case 2:
+//             return "bg-gray-400/10 border-gray-400/20"
+//         case 3:
+//             return "bg-amber-600/10 border-amber-600/20"
+//         default:
+//             return "bg-yellow-500/10 border-yellow-500/20"
+//     }
+// }
 
 export default function Achievements() {
     return (

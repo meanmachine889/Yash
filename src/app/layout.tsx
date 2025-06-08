@@ -21,19 +21,19 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Yash Bharadwaj",
-  description: "Full Stack Blockahain Developer",
-  metadataBase: new URL("https://yourdomain.com"), // important for relative image URLs
+  description: "Full Stack Blockchain Developer",
+  metadataBase: new URL("https://yxshcodes.vercel.app"), // important for relative image URLs
 
   openGraph: {
     title: "Yash Bharadwaj",
     description: "Check out my work.",
-    url: "https://yourdomain.com",
+    url: "https://yxshcodes.vercel.app",
     siteName: "Yash Bharadwaj",
     images: [
       {
-        url: "/preview.jpg", // will be resolved against metadataBase
-        width: 1200,
-        height: 630,
+        url: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1749386161/LinkedIn_cover_-_1_1_m2poo5.png", // will be resolved against metadataBase
+        width: 1584,
+        height: 396,
         alt: "portfolio preview image",
       },
     ],
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Yash Bharadwaj",
     description: "Check out my work.",
-    images: ["/preview.jpg"], // also resolved against metadataBase
-    creator: "@yourhandle", // optional
+    images: ["https://res.cloudinary.com/dnfv0h10u/image/upload/v1749386161/LinkedIn_cover_-_1_1_m2poo5.png"],
+    creator: "@YashBha95474776",
   },
 };
 

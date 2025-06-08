@@ -26,7 +26,7 @@ export default function Touch() {
     return (
         <div className="w-full md:p-8 p-4 rounded-xl bg-[#101010] border-2 border-[#141414]">
             <div className="flex items-center justify-between mb-4 sm:mb-6">
-                <h2 className="text-2xl font-normal text-white">Let&apos;s get in touch</h2>
+                <h2 className="md:text-2xl font-normal text-white">Let&apos;s get in touch</h2>
             </div>
             <div className="md:flex-row flex-col flex items-center">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full gap-2">

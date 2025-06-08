@@ -56,7 +56,7 @@ export default function Skills() {
   return (
     <div className="w-full md:p-8 p-4 rounded-xl bg-[#101010] border-2 border-[#141414]">
       <div className="flex items-center justify-between mb-4 sm:mb-6">
-        <h2 className="text-2xl font-normal text-white">Skills</h2>
+        <h2 className="md:text-2xl font-normal text-white">Skills</h2>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
         {techStack.map((tech) => (

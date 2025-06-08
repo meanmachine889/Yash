@@ -54,7 +54,7 @@ export default function Projects() {
   return (
     <div className="w-full md:p-8 p-4 rounded-xl bg-[#101010] border-2 border-[#141414]">
       <div className="flex items-center justify-between mb-4 sm:mb-6">
-        <h2 className="text-2xl font-normal text-white">Projects</h2>
+        <h2 className="md:text-2xl font-normal text-white">Projects</h2>
       </div>
       <div className="grid md:grid-cols-2 md:gap-2 gap-4">
         {projects.map((project) => (

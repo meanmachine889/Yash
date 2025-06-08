@@ -9,11 +9,11 @@ export default function Hero() {
                 <div className="flex flex-col-reverse lg:flex-row lg:justify-between lg:items-start gap-6 lg:gap-8">
                     <div className="flex-1 space-y-4 sm:space-y-6">
                         <div className="space-y-2 sm:space-y-3">
-                            <h1 className="text-2xl xl:text-4xl font-normal text-white leading-tight">
+                            <h1 className="md:text-2xl xl:text-4xl font-normal text-white leading-tight">
                                 I&apos;m Yash Bharadwaj
                             </h1>
                             <p className="text-zinc-400 text-base sm:text-lg lg:text-xl leading-relaxed">
-                                Fullstack Blockchain Developer.
+                                a 21 yr old fullstack blockchain developer.
                                 <br />
                                 Currently interning at{" "}
                                 <Link

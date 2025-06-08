@@ -30,7 +30,7 @@ export default function Experience() {
     <div className="w-full max-w-6xl mx-auto">
       <div className="w-full p-4 sm:p-6 lg:p-8 rounded-xl bg-[#101010] border-2 border-[#141414]">
         <div className="flex items-center justify-between mb-4 sm:mb-6">
-          <h2 className="text-2xl font-normal text-white">Experience</h2>
+          <h2 className="md:text-2xl font-normal text-white">Experience</h2>
         </div>
 
         <div className="space-y-2 sm:space-y-2">

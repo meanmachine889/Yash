@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   title: "Yash Bharadwaj",
   description: "Full Stack Blockchain Developer",
   metadataBase: new URL("https://yxshcodes.vercel.app"),
-  
+
   icons: {
     icon: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1749390603/y_qqrdor.svg",
     shortcut: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1749390603/y_qqrdor.svg",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Yash Bharadwaj",
     images: [
       {
-        url: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1749388697/nkj_p1uias.jpg",
+        url: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1749394872/huhuhuhuhuhu_ncgf48.png",
         width: 1200,
         height: 630,
         alt: "portfolio preview image",
@@ -46,7 +46,18 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Yash Bharadwaj",
+    description: "Check out my work.",
+    site: "@YashBha95474776",
+    images: [
+      "https://res.cloudinary.com/dnfv0h10u/image/upload/v1749394872/huhuhuhuhuhu_ncgf48.png",
+    ],
+  },
 };
+
 
 export default function RootLayout({
   children,

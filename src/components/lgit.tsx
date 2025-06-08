@@ -51,7 +51,7 @@ export default function Touch() {
                                 <Mail className="w-4 h-4 md:w-6 md:h-6 text-gray-300 group-hover:text-white" />
                             </div>
                         </div>
-                        <span className="text-sm md:text-base text-gray-300 group-hover:text-white">Email</span>
+                         <p className="text-gray-300 group-hover:text-white">Email</p>
                     </Link>
                 </div>
             </div>

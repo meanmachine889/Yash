@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     siteName: "Yash Bharadwaj",
     images: [
       {
-        url: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1747990271/ChatGPT_Image_Apr_29_2025_06_22_05_PM_zxijg9.png",
+        url: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1749388205/bjhbkb_wrlflk.png",
         width: 1200,
-        height: 1200,
+        height: 630,
         alt: "portfolio preview image",
       },
     ],
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Yash Bharadwaj",
     description: "Check out my work.",
-    images: ["https://res.cloudinary.com/dnfv0h10u/image/upload/v1749386161/LinkedIn_cover_-_1_1_m2poo5.png"],
+    images: ["https://res.cloudinary.com/dnfv0h10u/image/upload/v1749388205/bjhbkb_wrlflk.png"],
     creator: "@YashBha95474776",
   },
 };

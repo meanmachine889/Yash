@@ -40,14 +40,6 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Yash Bharadwaj",
-    description: "Check out my work.",
-    images: ["https://res.cloudinary.com/dnfv0h10u/image/upload/v1749388697/nkj_p1uias.jpg"],
-    creator: "@YashBha95474776",
-  },
 };
 
 

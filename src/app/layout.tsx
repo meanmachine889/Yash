@@ -23,6 +23,12 @@ export const metadata: Metadata = {
   title: "Yash Bharadwaj",
   description: "Full Stack Blockchain Developer",
   metadataBase: new URL("https://yxshcodes.vercel.app"),
+  
+  icons: {
+    icon: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1749390603/y_qqrdor.svg",
+    shortcut: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1749390603/y_qqrdor.svg",
+    apple: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1749390603/y_qqrdor.svg",
+  },
 
   openGraph: {
     title: "Yash Bharadwaj",
@@ -41,7 +47,6 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
-
 
 export default function RootLayout({
   children,

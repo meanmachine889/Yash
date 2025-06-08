@@ -68,25 +68,16 @@ export default function Projects() {
                 <p className="md:text-md text-sm text-zinc-400 mb-3">{project.description}</p>
                 <div className="flex md:gap-2 gap-1">
                   <Link href={project.github} target="_blank" rel="noopener noreferrer">
-                    <Button className="bg-[#101010] shadow-none border text-gray-300 font-light text-sm border-[#202020]"><GithubIcon /></Button>
+                    <Button className="bg-[#101010] hover:bg-zinc-900 shadow-none border text-gray-300 font-light text-sm border-[#202020]"><GithubIcon /></Button>
                   </Link>
                   {project.url !== "#" && (
                     <Link href={project.url} target="_blank" rel="noopener noreferrer">
-                      <Button className="bg-[#101010] shadow-none border text-gray-300 font-light text-sm border-[#202020]">Visit</Button>
+                      <Button className="bg-[#101010] hover:bg-zinc-900 shadow-none border text-gray-300 font-light text-sm border-[#202020]">Visit</Button>
                     </Link>
                   )}
                 </div>
               </div>
             </div>
-            {/* <div className="rounded-lg overflow-hidden">
-              <Image
-                src={project.image}
-                alt={`${project.name} screenshot`}
-                width={620}
-                height={400}
-                className="w-full md:h-64 object-cover"
-              />
-            </div> */}
           </div>
         ))}
       </div>

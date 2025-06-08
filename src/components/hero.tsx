@@ -86,7 +86,8 @@ export default function Hero() {
                     </div>
                     <div className="flex flex-col items-center lg:items-end space-y-4 lg:flex-shrink-0">
                         <div className="hidden lg:block">
-                            <span className="px-3 py-1 text-xs font-medium rounded-full bg-green-900/50 text-green-400 whitespace-nowrap">
+                            <span className="px-3 py-1 text-xs font-medium rounded-md bg-green-900/50 text-green-400 whitespace-nowrap flex items-center gap-2">
+                                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
                                 AVAILABLE FOR WORK
                             </span>
                         </div>

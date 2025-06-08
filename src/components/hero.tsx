@@ -8,9 +8,6 @@ export default function Hero() {
             <div className="w-full p-4 sm:p-6 lg:p-8 rounded-xl bg-[#101010] border-2 border-[#141414]">
                 <div className="flex flex-col-reverse lg:flex-row lg:justify-between lg:items-start gap-6 lg:gap-8">
                     <div className="flex-1 space-y-4 sm:space-y-6">
-                        {/* <div className="items-center md:flex hidden justify-between lg:justify-start">
-                            <PositionPill />
-                        </div> */}
                         <div className="space-y-2 sm:space-y-3">
                             <h1 className="text-2xl xl:text-4xl font-normal text-white leading-tight">
                                 I&apos;m Yash Bharadwaj
@@ -30,7 +27,7 @@ export default function Hero() {
                             </p>
                         </div>
                         <div className="space-y-4">
-                            <div className="flex items-center gap-3 sm:gap-4">
+                            <div className="flex items-center gap-2">
                                 <Link href="https://github.com/meanmachine889" target="_blank" aria-label="GitHub" className="hover:opacity-80 transition-opacity p-1">
                                     <Image
                                         src="https://res.cloudinary.com/dnfv0h10u/image/upload/v1747992108/github_io63nb.svg"

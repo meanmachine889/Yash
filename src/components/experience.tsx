@@ -4,21 +4,21 @@ import Link from "next/link"
 const projects = [
   {
     name: "Integral Development Corp.",
-    description: "Full-stack development, Blockchain development",
+    description: "Fullstack Blockchain developer",
     icon: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1748154335/integral_a0tnk8.jpg",
     url: "https://integral.com",
     duration: "May 2025 – Present",
   },
   {
     name: "Eventory",
-    description: "Full-stack development",
+    description: "Fullstack Web developer",
     icon: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1747994130/eventory_zqbrwo.png",
     url: "https://eventory.in",
     duration: "May 2024 – May 2025",
   },
   {
     name: "Horse's Mouth",
-    description: "Full-stack development",
+    description: "Fullstack Web developer",
     icon: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1747994130/horse_s-3_z70365.png",
     url: "https://horsesmouth.in",
     duration: "May 2024 – Aug 2024",
@@ -30,17 +30,17 @@ export default function Experience() {
     <div className="w-full max-w-6xl mx-auto">
       <div className="w-full p-4 sm:p-6 lg:p-8 rounded-xl bg-[#101010] border-2 border-[#141414]">
         <div className="flex items-center justify-between mb-4 sm:mb-6">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-normal text-white">Experience</h2>
+          <h2 className="text-2xl font-normal text-white">Experience</h2>
         </div>
 
-        <div className="space-y-3 sm:space-y-4">
+        <div className="space-y-2 sm:space-y-2">
           {projects.map((project, index) => (
             <Link
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
               key={project.name}
-              className="block p-3 sm:p-4 lg:p-5 bg-zinc-900 border border-zinc-800 rounded-lg hover:bg-zinc-800 hover:border-zinc-700 transition-all duration-200 group"
+              className="block p-4 py-5 bg-zinc-900 border border-zinc-800 rounded-lg hover:bg-zinc-800 hover:border-zinc-700 transition-all duration-200 group"
             >
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
                 {/* Main content */}
@@ -64,7 +64,7 @@ export default function Experience() {
 
                   {/* Text content */}
                   <div className="min-w-0 flex-1">
-                    <h3 className="text-base sm:text-lg lg:text-xl font-medium text-white mb-1 group-hover:text-zinc-100 transition-colors">
+                    <h3 className="text-base sm:text-lg lg:text-lg text-white mb-1 group-hover:text-zinc-100 transition-colors">
                       {project.name}
                     </h3>
                     <p className="text-sm sm:text-base text-zinc-400 group-hover:text-zinc-300 transition-colors leading-relaxed">

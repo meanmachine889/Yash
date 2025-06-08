@@ -1,100 +1,72 @@
-// import { Trophy, Award, Medal } from "lucide-react"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
-const achievements = [
+const extras = [
     {
-        position: "1st Place",
-        hackathon: "FIT INDIA - 6th Edition-2024",
-        rank: 1,
+        name: "MTTN",
+        achievement: "Head of Web & App Development",
+        description:
+            "Led the web and app development for Manipal's largest student media body. Mentored the development crew, built the official MTTN website from the ground up, and oversaw major updates to the Android app. Also led high-impact collaborations, including a campaign with Starbucks, where I designed the website and guided the team through execution.",
+        icon: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1748154335/integral_a0tnk8.jpg",
     },
     {
-        position: "2nd Place",
-        hackathon: "Enduraverse'25",
-        rank: 2,
+        name: "Techtatva '24",
+        achievement: "Core Committee Development Member",
+        description:
+            "Part of the core dev team behind Techtatva '24, Manipal’s national-level tech fest. Built and managed the official website used by 2200+ students and 400+ teams across India. Handled registration flows, team management, and ensured a seamless event experience alongside an amazing tech crew.",
     },
     {
-        position: "3rd Place",
-        hackathon: "WebCraft Hackathon",
-        rank: 3,
+        name: "Enduraverse'25 Hackathon",
+        achievement: "Achieved 2nd place among nationwide teams",
+        description:
+            "Secured 2nd place at Enduraverse'25, a national 72-hour hackathon by Endurance Technologies. Built a cross-platform fitness tracker using Flutter and ESP32 + MPU6050, featuring real-time data sync, offline mode with flash storage, and a user dashboard. Delivered a live pitch to industry judges in the final round.",
+        icon: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1748154335/integral_a0tnk8.jpg",
     },
     {
-        position: "Top 6",
-        hackathon: "VoiceAI Hackathon",
-        rank: 1,
-    }
+        name: "WebCraft Hackathon 2024",
+        achievement: "3rd Place among 350 participants",
+        description:
+            "Won 3rd place in WebCraft Hackathon hosted by Project DronAid at MIT Manipal. Advanced to the final 32 from 350 participants after a 24-hour web page cloning challenge. Built a full-featured event management platform allowing users to buy and host city events with tracked histories for both organizers and attendees.",
+    },
+    {
+        name: "VoiceAI Hackathon",
+        achievement: "Top 6 out of 345 teams worldwide",
+        description:
+            "Built YatriGPT, a smart travel voice assistant during a national hackathon by DaaS. Led frontend development and contributed to the backend with Flask and MongoDB. Selected among the top 6 teams after rounds of ideation, development, and pitching to DaaS CEO Quinton Newman.",
+    },
 ]
-
-// const getTrophyIcon = (rank: number) => {
-//     switch (rank) {
-//         case 1:
-//             return <Trophy className="w-full h-full text-yellow-500" />
-//         case 2:
-//             return <Award className="w-full h-full text-gray-400" />
-//         case 3:
-//             return <Medal className="w-full h-full text-amber-600" />
-//         default:
-//             return <Trophy className="w-full h-full text-yellow-500" />
-//     }
-// }
-
-// const getTrophyBg = (rank: number) => {
-//     switch (rank) {
-//         case 1:
-//             return "bg-yellow-500/10 border-yellow-500/20"
-//         case 2:
-//             return "bg-gray-400/10 border-gray-400/20"
-//         case 3:
-//             return "bg-amber-600/10 border-amber-600/20"
-//         default:
-//             return "bg-yellow-500/10 border-yellow-500/20"
-//     }
-// }
 
 export default function Achievements() {
     return (
-        <div className="w-full max-w-6xl mx-auto">
+        <div className="w-full max-w-6xl mx-auto mt-10">
             <div className="w-full p-4 sm:p-6 lg:p-8 rounded-xl bg-[#101010] border-2 border-[#141414]">
                 <div className="flex items-center justify-between mb-4 sm:mb-6">
-                    <h2 className="text-xl sm:text-2xl lg:text-3xl font-normal text-white">Achievements</h2>
+                    <h2 className="text-2xl font-normal text-white">Extras</h2>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    {achievements.map((achievement, index) => (
-                        <div
-                            key={`${achievement.hackathon}-${index}`}
-                            className="block p-3 sm:p-4 lg:p-5 bg-zinc-900 border border-zinc-800 rounded-lg hover:bg-zinc-800 hover:border-zinc-700 transition-all duration-200 group cursor-pointer"
+                <Accordion
+                    type="single"
+                    collapsible
+                    defaultValue="item-0" // Open first accordion by default
+                    className="w-full space-y-2"
+                >
+                    {extras.map((item, index) => (
+                        <AccordionItem
+                            key={index}
+                            value={`item-${index}`}
+                            className="bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-2 hover:bg-zinc-800 hover:border-zinc-700 transition-all duration-200"
                         >
-                            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
-                                <div className="flex items-start md:flex-row flex-col sm:items-center gap-3 sm:gap-4 min-w-0 flex-1">
-                                    {/* <div
-                                        className={`w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 flex-shrink-0 rounded-full flex items-center justify-center border ${getTrophyBg(achievement.rank)}`}
-                                    >
-                                        {achievement.position.includes("Top") ? (
-                                            <div className="w-full h-full flex items-center justify-center text-yellow-500">
-                                                {achievement.position.replace("Top ", "")}
-                                            </div>
-                                        ) : (
-                                            <div className="w-6 h-6">
-                                                {getTrophyIcon(achievement.rank)}
-                                            </div>
-                                        )}
-                                    </div> */}
-
-
-                                    <div className="min-w-0 flex-1">
-                                        <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3 mb-1">
-                                            <h3 className="text-base sm:text-lg text-white group-hover:text-zinc-100 transition-colors">
-                                                {achievement.position}
-                                            </h3>
-                                        </div>
-                                        <p className="text-sm sm:text-base text-zinc-400 group-hover:text-zinc-300 transition-colors leading-relaxed">
-                                            {achievement.hackathon}
-                                        </p>
-                                    </div>
+                            <AccordionTrigger className="hover:no-underline py-3 text-left">
+                                <div className="flex flex-col gap-1 text-left">
+                                    <p className="text-base sm:text-lg lg:text-lg font-normal text-white">{item.achievement}</p>
+                                    <p className="text-sm sm:text-base text-zinc-400 font-normal">{item.name}</p>
                                 </div>
-                            </div>
-                        </div>
+                            </AccordionTrigger>
+                            <AccordionContent className="pb-4 pt-2">
+                                <p className="text-sm sm:text-base text-zinc-300 leading-relaxed">{item.description}</p>
+                            </AccordionContent>
+                        </AccordionItem>
                     ))}
-                </div>
+                </Accordion>
             </div>
         </div>
     )

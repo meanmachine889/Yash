@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     siteName: "Yash Bharadwaj",
     images: [
       {
-        url: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1749386161/LinkedIn_cover_-_1_1_m2poo5.png", // will be resolved against metadataBase
-        width: 1584,
-        height: 396,
+        url: "https://res.cloudinary.com/dnfv0h10u/image/upload/v1747990271/ChatGPT_Image_Apr_29_2025_06_22_05_PM_zxijg9.png",
+        width: 1200,
+        height: 630,
         alt: "portfolio preview image",
       },
     ],
